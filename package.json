@@ -4,7 +4,6 @@
         "dev": "vite",  
         "build": "vite build",
         "predeploy":"npm run build",
-         "build": "[vite build] build --output public"
         
     },
     "devDependencies": {
