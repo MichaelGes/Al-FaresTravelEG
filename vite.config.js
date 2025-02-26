@@ -1,10 +1,7 @@
 import { defineConfig } from 'vite';
 import laravel from 'laravel-vite-plugin';
 
-export default defineConfig({build: 
-{
-    outDir: 'dist'
-  }
+export default defineConfig({
     plugins: [
         laravel({
             input: [
@@ -15,4 +12,7 @@ export default defineConfig({build:
             refresh: true,
         }),
     ],
+    build: {
+        outDir: 'dist' // أضف هذا الجزء لتحديد دليل الخرج
+    }
 });
